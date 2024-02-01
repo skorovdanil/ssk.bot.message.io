@@ -1,0 +1,84 @@
+body {
+    background-color: var(--block-bg-color);
+    color: var(--text-color);
+    color-scheme: var(--tg-color-scheme);
+    font-family: var(--default-font);
+
+
+    --default-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --block-bg-color: var(--tg-theme-bg-color);
+    --bg-color: var(--tg-theme-secondary-bg-color, #ebedf0);
+    --animation: .15s ease;
+    --page-animation-duration: .3s;
+    --page-animation: var(--page-animation-duration) ease;
+    --text-color: #222;
+    --page-hint-color: #83878a;
+    --hint-color: white;
+    --placeholder-color: #e4e4e488;
+}
+
+html.dark body {
+    --block-bg-color: var(--tg-theme-bg-color);
+    --bg-color: var(--tg-theme-secondary-bg-color, #0f0f0f);
+    --text-color: #fff;
+    --page-hint-color: #9b9ba1;
+    --hint-color: #292929;
+    --placeholder-color: #0f0f0f;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.svg_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+input[type="text"],
+input[type="tel"] {
+    padding: 7px;
+    margin-bottom: 20px;
+    margin-top: 2px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    background-color: var(--placeholder-color);
+    border-radius: 7px;
+    border-color: #a057ef;
+    border-width: 2px;
+    border-style:solid;
+    color: var(--text-color);
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  background-color: var(--hint-color);
+  color: var(--text-color);
+}
+
+p {
+    display: flex;
+    margin-top: 2px;
+    margin-right: 1px;
+}
+
+textarea {
+    background-color: var(--placeholder-color);
+    border-radius: 7px;
+    border-color: #a057ef;
+    border-style:solid;
+    font-family: var(--default-font);
+    border-width: 2px;
+    height: 100px;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    resize: none;
+    color: var(--text-color);
+}
